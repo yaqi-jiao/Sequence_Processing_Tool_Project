@@ -1,0 +1,30 @@
+# --- Python related ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+*.pyo
+*.pyd
+
+# --- Virtual environments ---
+.venv/
+venv/
+
+# --- Jupyter / notebooks cache ---
+.ipynb_checkpoints/
+
+# --- System files ---
+.DS_Store
+Thumbs.db
+
+# # --- Data & Results (if you don't want to push raw results) ---
+# data/
+# result/
+
+# --- Logs / temporary files ---
+*.log
+*.tmp
+
+# --- Others ---
+*.bak
+
