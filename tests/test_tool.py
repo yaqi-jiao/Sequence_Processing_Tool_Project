@@ -18,11 +18,13 @@ class TestSeqProcessingTool(unittest.TestCase):
         self.assertEqual(codon_table["UAG"], "*")
 
     def test_fastq2fasta_and_fasta_qc(self):
-        fake_fastq = StringIO("@seq1\\nATCG\\n+\\IIII\\n")
+        fake_fastq = StringIO("@seq1\nATCG\n+\IIII\n")
         temp_fasta_path = self.tool.fastq2fasta(fake_fastq)
 
         with open(temp_fasta_path) as f:
             result = self.tool.fasta_qc(f)
+        # print("result keys:", list(result.keys()))
+        # print("result values:", result)
 
         self.assertEqual(result[">seq1"], "ATCG")
 
