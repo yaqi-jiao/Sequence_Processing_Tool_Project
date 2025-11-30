@@ -86,5 +86,5 @@ build:
 # Run your tool manually (optional)
 # -------------------------------------------------------
 run:
-	@$(PYTHON) -c "from SeqProcessingTool import SeqProcessingTool; print('Tool loaded OK')"
+	@$(PYTHON) -c "from SequenceTool.SeqProcessingTool import SeqProcessingTool; print('Tool loaded OK')"
 	@echo "[run] SeqProcessingTool loaded successfully"
